@@ -1,36 +1,36 @@
 ## Ruby, v2.2.3
 
 ## HASH
-Tablice hashowe pozwalaja na przechowywanie objektow.
+Tablice hashowe pozwalaja na przechowywanie obiektow.
 
 #### Zasady
 Tablice indeksujemy od 0.
 
-*Tworzenie nowej tablicy*
+**Tworzenie nowej tablicy**
 ```ruby  
   myArray = [1, "string"]
 ```
 #### INICJOWANIE
 
-*Inicjowanie*
+**Inicjowanie**
 ```ruby  
   myArray = Array.new
 ```
-*Ilosc elementow podajemy w nawiasie*
+**Ilosc elementow podajemy w nawiasie**
 ```ruby  
   myArray = Array.new(2)
 ```
-*Inicjowanie gotowymi elementami*
+**Inicjowanie gotowymi elementami**
 ```ruby    
   myArray = Array.new(3, 4.3)
 ```
-*Tworzenie tablicy obiektow*
+**Tworzenie tablicy obiektow**
 ```ruby  
   myArray = Array.new(4) { Array.new(3) }
 ```
 #### GRANICE
 
-*Precyzowanie granicy tablic*
+**Precyzowanie granicy tablic**
 ```ruby  
   myArray.fetch(100)
   myArray.fetch(100, "WARNING!")
@@ -38,7 +38,7 @@ Tablice indeksujemy od 0.
 
 #### OTRZYMYWANIE ELEMENTOW
 
-*Uzyskiwanie danego elementu*
+**Uzyskiwanie danego elementu**
   * inicjowanie
 ```ruby  
 myArray = [1,3,5,2,7,7]
@@ -51,32 +51,32 @@ myArray[3]
   * otrzymywanie elementow + zakres
     myArray[1..4]
 
-*pierwszy i ostatni element*
+**pierwszy i ostatni element**
 ```ruby
   myArray.first
   myArray.last
 ```
 
-*pierwsze X elementow - > arr.take(X)*
+**pierwsze X elementow - > arr.take(X)**
 ```ruby
   myArray.take(4)
 ```
 
-*przeciwienstwo take => drop*
+**przeciwienstwo take => drop**
 ```ruby
   myArray.drop(4)
 ```
 
 #### SPRAWDZANIE DLUGOSCI TABLICY
 
-*dlugosc tablicy*
+**dlugosc tablicy**
 ```ruby
   myArray.length
 
   LUB myArray.count
 ```
 
-*sprawdz czy dany element istnieje?...*
+**sprawdz czy dany element istnieje?...**
 ```ruby
 myArray.empty?  #= > RETURN BOOLEAN
 ```
@@ -88,17 +88,17 @@ myArray.include?('blbablalb')
 
 #### DODAWANIE ELEMENTOW
 
-*dodawanie elementow do tablicy prawie jak vector z C++*
+**dodawanie elementow do tablicy prawie jak vector z C++**
 ```ruby
   myArray.push(5)
 ```
 
-*dodanie elementu na poczatek*
+**dodanie elementu na poczatek**
 ```ruby
 myArray.unshift(0)
 ```
 
-*dodanie elementu do wybranego miejsca*
+**dodanie elementu do wybranego miejsca**
 ```ruby
 myArray.insert(5, 'babalalba')
 ```
