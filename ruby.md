@@ -1,6 +1,6 @@
 ## Ruby, v2.2.3
 
-### HASH
+## HASH
 Tablice hashowe pozwalaja na przechowywanie objektow.
 
 #### Zasady
@@ -140,3 +140,8 @@ myArray.map{} ##creating new array ( with '!' the same)
 myArray.select{ |a| a > 3} ##reject, drop_while
 ```
   
+## ENUMERABLE
+
+Enumerable to kolekcja klas z metodami szukania, iterowania i z mozliwoscia sortowania. 
+
+####
