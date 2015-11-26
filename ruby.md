@@ -1,98 +1,95 @@
 ## Ruby, v2.2.3
-notatki
 
-#### Hash
-Hash are assocciate arrays. Hash allows you to use object instead of Integer.
-For example:
+### HASH
+Tablice hashowe pozwalaja na przechowywanie objektow.
 
-#### ARRAY
-INFO:
-Array starts at 0 !
+#### Zasady
+Tablice indeksujemy od 0.
 
-*Creating a new Array*
+*Tworzenie nowej tablicy*
   myArray = [1, "string"]
 
-#### INITIALIZE
+#### INICJOWANIE
 
-*Initialize*
+*Inicjowanie*
   myArray = Array.new
 
-*Deciding how much elements (EMPTY) array should have*
+*Ilosc elementow podajemy w nawiasie*
   myArray = Array.new(2)
 
-*When initializing with some beginnig parameters are wanted use this*
+*Inicjowanie gotowymi elementami*
   myArray = Array.new(3, 4.3)
 
-*Creating separate objects*
+*Tworzenie tablicy obiektow*
   myArray = Array.new(4) { Array.new(3) }
 
-#### BOUNDS
+#### GRANICE
 
-*Array bounds*
+*Precyzowanie granicy tablic*
   myArray.fetch(100)
   myArray.fetch(100, "WARNING!")
 
-#### GETTING ELEMENT
+#### OTRZYMYWANIE ELEMENTOW
 
-*Retrieving specific element*
-  * initialize
+*Uzyskiwanie danego elementu*
+  * inicjowanie
     myArray = [1,3,5,2,7,7]
-  * getting elements
+  * uzyskiwanie elementu
     myArray[1]
     myArray[3]
-  * getting elements + RANGE
+  * otrzymywanie elementow + zakres
     myArray[1..4]
 
-*first and last element*
+*pierwszy i ostatni element*
   myArray.first
   myArray.last
 
-*first X elements - > arr.take(X)*
+*pierwsze X elementow - > arr.take(X)*
   myArray.take(4)
 
-*opposie of take => drop*
+*przeciwienstwo take => drop*
   myArray.drop(4)
 
-#### CHCECKING LENGTH / ELEMENT EXISTANCE
+#### SPRAWDZANIE DLUGOSCI TABLICY
 
-#### LENGTH of ARRAY
-  myArray.length OR myArray.count
+*dlugosc tablicy*
+  myArray.length LUB myArray.count
 
-*Check if any elements exist?*
+*sprawdz czy dany element istnieje?...*
   myArray.empty?  #= > RETURN BOOLEAN
 
-*..or.. if SPECIFIC elements exist*
+*...lub element z dana wartoscia*
   myArray.include?('blbablalb')
 
-#### ADDING ELEMENTS
+#### DODAWANIE ELEMENTOW
 
-*adding almost the same as a vector/stack class C++*
+*dodawanie elementow do tablicy prawie jak vector z C++*
   myArray.push(5)
 
-*adding at the BEGINNING*
+*dodanie elementu na poczatek*
   myArray.unshift(0)
 
-*adding at the SPECIFIC place*
+*dodanie elementu do wybranego miejsca*
   myArray.insert(5, 'babalalba')
 
-*if more attributes on the second place will be given then those elements*
-*will be include at the table*
+#### METODY STOSU NA TABLICY
 
-#### STACK METHODS ON ARRAY
- # -----pop, shift etc, delete_at(particular_index)
+ # pop, shift etc, delete_at(particular_index)
 
-#### DELETE
-  myArray.delete_at(3) # < - on specific index
-  myArray.delete('bla') # < - delete elements with specific content
+#### USUWANIE
 
-  myArray.compact # < - deleting NIL elements
+  myArray.delete_at(3) # < - z danego miejsca
+  myArray.delete('bla') # < - dla danej zawartosci
 
-  myArray.unique # < - deleteing unique elements
+  myArray.compact # < - usuwanie elementow
 
-#### ITERATING
-*construction*
+  myArray.unique # < - usuwanie unikalnych elementow
+
+#### ITEROWANIE
+
+*szablon konstrukcji*
   myArray.each { |a| print a -= 10, " " }
-*reverse_each for reversing*
+*mapowanie*
   myArray.map{} ##creating new array ( with '!' the same)
 
   myArray.select{ |a| a > 3} ##reject, drop_while
