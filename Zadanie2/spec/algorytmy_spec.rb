@@ -14,13 +14,6 @@ RSpec.describe 'algorytmy.rb' do
 		it 'Sorted list' do
 			expect { stackSort([5,7,81,32,5]).to eq([5,5,7,32,81])}
 			expect { stackSort([5,-7,81,32,-5]).to eq([-5,-7,5,32,81])}
-			expect { stackSort([4,4,4,4]).to eq([4,4,4,4])}
-			expect { stackSort([1,2,3,4,5,6,7]).to eq([1,2,3,4,5,6,7])}
-		end
-
-		it 'Sorted list' do
-			expect { stackSort([5,7,81,32,5]).to eq([5,5,7,32,81])}
-			expect { stackSort([5,-7,81,32,-5]).to eq([-5,-7,5,32,81])}
 		end
 
 		it 'Dealing with the same elements'	do
@@ -73,8 +66,6 @@ RSpec.describe 'algorytmy.rb' do
 		it 'Sorted list' do
 			expect { shakeSort([5,7,81,32,5]).to eq([5,5,7,32,81])}
 			expect { shakeSort([5,-7,81,32,-5]).to eq([-5,-7,5,32,81])}
-			expect { shakeSort([4,4,4,4]).to eq([4,4,4,4])}
-			expect { shakeSort([1,2,3,4,5,6,7]).to eq([1,2,3,4,5,6,7])}
 		end
 
 		it 'No error' do
