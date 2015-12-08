@@ -63,11 +63,6 @@ RSpec.describe 'algorytmy.rb' do
 			expect { shakeSort([4,3,25,25,53])}.not_to raise_error
 		end
 
-		it 'Sorted list' do
-			expect { shakeSort([5,7,81,32,5]).to eq([5,5,7,32,81])}
-			expect { shakeSort([5,-7,81,32,-5]).to eq([-5,-7,5,32,81])}
-		end
-
 		it 'No error' do
 			expect { shakeSort([4,3,25,25,53])}.not_to raise_error
 		end
