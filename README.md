@@ -16,4 +16,4 @@ Podręczne linki:
 
 1. [x] [Learn X in Y minutes, where X = Ruby Array/Hash/Enumerable](/Zadanie1/ruby.md)
 2. [x] [Coś do przetestowania na początek](/Zadanie2)
-3. [x] Program/Biblioteka/Aplikacja WWW
+3. [x] Program/Biblioteka/Aplikacja WWW (https://github.com/kniewczas/ruby/tree/master/Zadanie3)
