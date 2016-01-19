@@ -1,5 +1,5 @@
 require 'simplecov'
-require 'RSpec'
+require 'rspec'
 SimpleCov.start
 
 require_relative '../lib/kantor.rb'
